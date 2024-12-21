@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nerko+One&display=swap");
+@font-face {
+  font-family: "norse bold";
+  font-weight: bold;
+  src: url("./Norse-Bold.otf") format("opentype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-family: "lato", sans-serif;
+}
+.container {
+  display: flex;
+  height: 100%;
+}
+.img-section {
+  background-image: url(./backgroundImg.jpg);
+  flex: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.img-section div {
+  background-color: rgb(0, 0, 0);
+  opacity: 0.5;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20vh;
+}
+.img-section img {
+  height: 150px;
+}
+#logo-text {
+  font-family: "norse bold", "sans-serif", "Arial";
+  font-size: 5rem;
+  color: white;
+}
+.form-section {
+  flex: 2;
+}
+.signup-masg {
+  height: 35vh;
+  background-color: rgb(255, 255, 255);
+  padding: 30px;
+}
+#masg1 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  width: 600px;
+  margin: 30px;
+}
+#masg2 {
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+#form-title {
+  margin: 10px 30px;
+}
+.formSection {
+  display: flex;
+  margin-left: 30px;
+}
+
+.inputField {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  margin-right: 60px;
+}
+.form-section input:focus {
+  outline: none;
+  border: 1px solid rgb(22, 135, 255);
+}
+input {
+  padding: 5px;
+  border-radius: 5px;
+  width: 200px;
+  border: 1px solid #e5e7eb;
+}
+label {
+  color: rgb(76, 76, 76);
+  font-weight: 500;
+}
+.formContainer {
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+button {
+  padding: 8px;
+  width: 180px;
+  border-radius: 5px;
+  border: 1px solid black;
+  background-color: #596d48;
+  color: white;
+  font-size: medium;
+  margin: 25px 30px;
+}
+p {
+  margin: 0 30px;
+}
+a {
+  text-decoration: none;
+  color: #596d48;
+}
+
+#password,
+#confirmPassword:invalid {
+  border: 1px solid red;
+}
